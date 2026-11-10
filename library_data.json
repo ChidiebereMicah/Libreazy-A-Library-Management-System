@@ -1,0 +1,134 @@
+{
+  "books": [
+    {
+      "type": "Novel",
+      "id": "B001",
+      "title": "Half of a Yellow Sun",
+      "author": "Chimamanda Ngozi Adichie",
+      "is_available": true,
+      "borrowed_by": null,
+      "due_date": null,
+      "renewals": 0,
+      "history": [],
+      "waiting_list": [],
+      "held_for": null
+    },
+    {
+      "type": "Novel",
+      "id": "B002",
+      "title": "Purple Hibiscus",
+      "author": "Chimamanda Ngozi Adichie",
+      "is_available": true,
+      "borrowed_by": null,
+      "due_date": null,
+      "renewals": 0,
+      "history": [
+        {
+          "member_id": "M003",
+          "borrowed_on": "2026-11-10",
+          "returned_on": "2026-11-10"
+        }
+      ],
+      "waiting_list": [],
+      "held_for": null
+    },
+    {
+      "type": "Novel",
+      "id": "B003",
+      "title": "Things Fall Apart",
+      "author": "Chinua Achebe",
+      "is_available": false,
+      "borrowed_by": "M003",
+      "due_date": "2026-11-24",
+      "renewals": 1,
+      "history": [
+        {
+          "member_id": "M003",
+          "borrowed_on": "2026-11-10",
+          "returned_on": null
+        }
+      ],
+      "waiting_list": [],
+      "held_for": null
+    },
+    {
+      "type": "Textbook",
+      "id": "B004",
+      "title": "Python Crash Course",
+      "author": "Eric Matthes",
+      "is_available": true,
+      "borrowed_by": null,
+      "due_date": null,
+      "renewals": 0,
+      "history": [],
+      "waiting_list": [],
+      "held_for": null
+    },
+    {
+      "type": "Textbook",
+      "id": "B005",
+      "title": "Introduction to Algorithms",
+      "author": "Thomas H. Cormen",
+      "is_available": false,
+      "borrowed_by": "M003",
+      "due_date": "2026-11-17",
+      "renewals": 0,
+      "history": [
+        {
+          "member_id": "M003",
+          "borrowed_on": "2026-11-10",
+          "returned_on": null
+        }
+      ],
+      "waiting_list": [],
+      "held_for": null
+    },
+    {
+      "type": "Magazine",
+      "id": "B006",
+      "title": "Tech Monthly - November 2026",
+      "author": "Various Authors",
+      "is_available": true,
+      "borrowed_by": null,
+      "due_date": null,
+      "renewals": 0,
+      "history": [],
+      "waiting_list": [],
+      "held_for": null
+    }
+  ],
+  "members": [
+    {
+      "id": "S001",
+      "name": "Head Librarian",
+      "pin_hash": "ecfe6ec4ffca52b99c78381e9f232dea4fe222903da139decdcb804ad1a80c1a",
+      "role": "staff",
+      "borrowed_books": []
+    },
+    {
+      "id": "M001",
+      "name": "Ada Obi",
+      "pin_hash": "9b6f6f6ef649945230302442efc72116cfd3fac554a7573b00599bdace483632",
+      "role": "member",
+      "borrowed_books": []
+    },
+    {
+      "id": "M002",
+      "name": "Tunde Bello",
+      "pin_hash": "f3dd6461f6755ad48e08b8341b9143c067bfdb0e9a44a9f2cff636fb1d4f59cd",
+      "role": "member",
+      "borrowed_books": []
+    },
+    {
+      "id": "M003",
+      "name": "Adedotun Adewoyin",
+      "pin_hash": "ecfe6ec4ffca52b99c78381e9f232dea4fe222903da139decdcb804ad1a80c1a",
+      "role": "member",
+      "borrowed_books": [
+        "B005",
+        "B003"
+      ]
+    }
+  ],
+  "fines_log": []
+}
